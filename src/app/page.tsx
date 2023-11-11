@@ -1,4 +1,5 @@
 "use client";
+import { Header } from "@/components/Header/Header";
 import { fetchApiData } from "@/services/database";
 import { useState, useEffect } from "react";
 
@@ -13,8 +14,11 @@ export default function Home() {
   console.log(data);
 
   return (
-    <main>
-      <p>tesste</p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <p>tesste</p>
+      </main>
+    </>
   );
 }
