@@ -6,9 +6,10 @@ import { fetchApiData } from "@/services/database";
 import { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { Container } from "./GlobalStyle";
+import { ArrProduct } from "@/@Types/Types";
 
 export default function Home() {
-  const [data, setData] = useState();
+  const [data, setData] = useState<ArrProduct[]>([]);
 
   useEffect(() => {
     fetchApiData().then((data) => {
