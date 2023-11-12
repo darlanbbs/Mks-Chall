@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   z-index: 11;
   background-color: #0f52ba;
   height: 101px;
-  font-family: ${({ theme }) => theme.fonts.sans};
+  font-family: ${({ theme }) => theme.fonts.mont};
 `;
 export const NavContainer = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 export const theme = {
   fonts: {
-    sans: "Montserrat",
+    mont: "Montserrat",
   },
   backgroundColors: {
     primary: "#0F52BA",

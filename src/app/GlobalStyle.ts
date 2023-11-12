@@ -5,5 +5,5 @@ export const Container = styled.div`
   padding: 0px;
   box-sizing: border-box;
   border: none;
-  font-family: ${({ theme }) => theme.fonts.sans};
+  font-family: ${({ theme }) => theme.fonts.mont};
 `;
