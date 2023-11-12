@@ -140,7 +140,7 @@ export const CartProducts = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.textColors.primary};
     background: black;
     border-radius: 50%;
     cursor: pointer;
@@ -155,7 +155,7 @@ export const ProductPrice = styled.span`
   @media (max-width: 768px) {
     padding: 10px;
     background-color: #373737;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.textColors.primary};
 
     border-radius: 5px;
   }
