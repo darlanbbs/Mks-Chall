@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -9,6 +9,8 @@ export const HeaderContainer = styled.header`
   width: 100%;
   z-index: 11;
   background-color: #0f52ba;
+  height: 101px;
+  font-family: ${({ theme }) => theme.fonts.sans};
 `;
 export const NavContainer = styled.div`
   display: flex;
@@ -27,7 +29,6 @@ export const Logo = styled.div`
   align-items: baseline;
   span {
     font-size: 40px;
-    line-height: 1px;
     font-weight: 400;
     margin-right: 8px;
     mix-blend-mode: normal;
@@ -35,5 +36,6 @@ export const Logo = styled.div`
   h1 {
     font-size: 20px;
     font-weight: 300;
+    line-height: 19px;
   }
 `;
