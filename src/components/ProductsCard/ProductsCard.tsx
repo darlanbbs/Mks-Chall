@@ -7,7 +7,9 @@ import Image from "next/image";
 const ProductsCard = ({
   id,
   name,
-
+  brand,
+  quantity,
+  total,
   description,
   photo,
   price,

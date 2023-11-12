@@ -22,6 +22,9 @@ const CatalogProduct = (props: Props) => {
           data.map((product: any) => (
             <div key={product.id}>
               <ProductsCard
+                brand={product.brand}
+                quantity={product.quantity}
+                total={product.total}
                 id={product.id}
                 name={product.name}
                 description={product.description}
