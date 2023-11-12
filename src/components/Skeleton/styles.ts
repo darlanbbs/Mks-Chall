@@ -32,7 +32,7 @@ export const Skeleton = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.backgroundColors.primary};
   gap: 10px;
   padding: 1.125rem 0.5rem 1.25rem;
   border-radius: 5px;
