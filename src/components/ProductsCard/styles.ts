@@ -11,7 +11,6 @@ export const Card = styled.div`
   height: 285px;
   background: #fff;
   border-radius: 8px;
-  font-family: ${({ theme }) => theme.fonts.mont};
   box-shadow: 0px 2px 8px 0px #00000022;
 
   span {
@@ -20,7 +19,6 @@ export const Card = styled.div`
     line-height: 19px;
     letter-spacing: 0px;
     text-align: left;
-    font-family: ${({ theme }) => theme.fonts.mont};
   }
   span:last-child {
     font-size: 15px;
@@ -32,7 +30,6 @@ export const Card = styled.div`
     padding: 8px;
     border-radius: 8px;
     color: ${({ theme }) => theme.textColors.primary};
-    font-family: ${({ theme }) => theme.fonts.mont};
   }
   img {
     object-fit: contain;
@@ -46,7 +43,6 @@ export const Card = styled.div`
     text-align: left;
     color: #2c2c2c;
     margin-top: 5px;
-    font-family: ${({ theme }) => theme.fonts.mont};
   }
 `;
 
