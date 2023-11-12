@@ -2,6 +2,7 @@ import { ArrProduct } from "@/@Types/Types";
 import { fetchApiData } from "@/services/database";
 import React, { useEffect, useState } from "react";
 import ProductsCard from "../ProductsCard/ProductsCard";
+import { Container, CatalogArea } from "./styles";
 
 type Props = {};
 
