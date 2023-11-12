@@ -2,7 +2,6 @@ import { Product } from "@/@Types/Types";
 import React, { useEffect, useState } from "react";
 import * as C from "./styles";
 import { FiShoppingBag } from "react-icons/fi";
-import { Skeleton } from "../Skeleton/styles";
 
 const ProductsCard = ({
   id,

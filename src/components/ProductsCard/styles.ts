@@ -1,20 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
-
-export const CardContainer = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-  }
-`;
+import styled from "styled-components";
 
 export const Card = styled.div`
   display: flex;
@@ -23,6 +7,8 @@ export const Card = styled.div`
   justify-content: center;
   position: relative;
   padding: 1.125rem 0.5rem 3rem;
+  width: 218px;
+  height: 285px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
