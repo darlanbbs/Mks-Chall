@@ -53,8 +53,12 @@ export const SideHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
     cursor: pointer;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
   }
 
   @media (max-width: 768px) {
@@ -195,9 +199,11 @@ export const TotalContainer = styled.div`
 export const ButtonArea = styled.div`
   height: 100%;
   display: flex;
-  align-items: end;
-  justify-content: center;
+  align-items: center;
+  justify-content: end;
   width: 100%;
+  flex-direction: column;
+  gap: 10px;
 `;
 
 export const BottomButton = styled.button`

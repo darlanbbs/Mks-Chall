@@ -37,7 +37,9 @@ const CartSideBar: React.FC<ButtonProps> = ({ cartopen }) => {
         <C.Content className="content">
           <C.SideHeader>
             <div>
-              <h2>Carrinho de compras</h2>
+              <h2>
+                Carrinho<br></br> de compras
+              </h2>
             </div>
             <span onClick={handleCLick}>x</span>
           </C.SideHeader>
@@ -79,11 +81,11 @@ const CartSideBar: React.FC<ButtonProps> = ({ cartopen }) => {
             </C.SideProducts>
           </div>
 
-          <C.TotalContainer>
-            <span>Total:</span>
-            <span>R${cart.totalPrice}</span>
-          </C.TotalContainer>
           <C.ButtonArea>
+            <C.TotalContainer>
+              <span>Total:</span>
+              <span>R${cart.totalPrice}</span>
+            </C.TotalContainer>
             <C.BottomButton>Finalizar Compra</C.BottomButton>
           </C.ButtonArea>
         </C.Content>
