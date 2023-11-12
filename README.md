@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Front-end MKS
 
-## Getting Started
+# Descrição
+Este é o projeto de front-end desenvolvido como parte do desafio proposto pela MKS. Trata-se de um e-commerce que consome a API REST de produtos da loja para exibir a lista de produtos disponíveis. A aplicação permite aos usuários:
 
-First, run the development server:
+- Listar Produtos: A lista de produtos é obtida dinamicamente da API da MKS e exibida na página inicial do aplicativo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Adicionar Produtos ao Carrinho: Os usuários podem adicionar produtos ao carrinho diretamente da lista de produtos. Um botão de adição permite que o usuário inclua um item ao carrinho.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Quantidade Personalizável no Carrinho: No carrinho, os usuários podem ajustar a quantidade de cada produto adicionado, utilizando botões de incremento e decremento. Isso proporciona uma experiência intuitiva para ajustar a quantidade desejada de cada item.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Shimmer/Skeleton durante o Carregamento: Enquanto os dados estão sendo carregados da API, um efeito de shimmer/skeleton é exibido para fornecer feedback visual ao usuário.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Demonstração
+Acesse a aplicação aqui.
 
-## Learn More
+Como executar localmente
+- Clone o repositório: ```git clone git@github.com:darlanbbs/Mks-Chall.git```
+- Instale as dependências: ```npm install ou yarn```
+- Execute a aplicação: ```npm run dev ou yarn run dev```
+  
+# Testes Unitários
+Os testes unitários foram implementados utilizando Jest e a testing-library. Para executar os testes, utilize o comando: ```npm run test ou yarn run test```
 
-To learn more about Next.js, take a look at the following resources:
+# Tecnologias Utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js: Framework React para construção de aplicações web.
+- TypeScript: Superset do JavaScript que adiciona tipagem estática ao código.
+- Styled-Components: Biblioteca para estilização de componentes React com suporte a CSS-in-JS.
+- Jest: Framework de teste para JavaScript e TypeScript.
+- React Testing Library: Ferramenta de testes para React que incentiva práticas de teste centradas no usuário.
+- Redux: Biblioteca para gerenciamento de estado na aplicação.
+  
+# Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- <a href="https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=0%3A1">Figma</a>
+- <a href="https://mks-challenge-api-frontend.herokuapp.com/api-docs/">API</a>
+- <a href="https://mks-chall-mwf70dzwh-darlanbbs.vercel.app/">Aplicação</a>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Layout 
+
+
+- Página inicial
+
+  ![Web1](https://github.com/darlanbbs/Mks-Chall/blob/main/layout/homepage.png)
+
+ - Carrinho de compras
+
+     ![Web1](https://github.com/darlanbbs/Mks-Chall/blob/main/layout/sideBar.png) 
