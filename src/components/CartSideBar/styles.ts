@@ -107,7 +107,7 @@ export const CartProducts = styled.div`
   justify-content: space-between;
   padding: 20px 25px;
   background: #fff;
-  width: 100%;
+  width: 70%;
   border-radius: 8px;
   position: relative;
 
@@ -172,7 +172,7 @@ export const ProductQuantity = styled.div`
   button {
     border: none;
     outline: none;
-    background: ${(props) => props.theme.backgroundColors.primary};
+    background: #fff;
     padding: 2px 8px;
     font-size: 14px;
     cursor: pointer;
