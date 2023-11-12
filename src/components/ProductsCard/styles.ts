@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Card = styled.div`
   display: flex;
   align-items: center;
@@ -46,7 +54,7 @@ export const Card = styled.div`
   }
 `;
 
-export const CarDesc = styled.div`
+export const CardDesc = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
