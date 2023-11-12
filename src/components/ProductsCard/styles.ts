@@ -6,33 +6,47 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 1.125rem 0.5rem 3rem;
+  padding: 0.1rem 0.1rem;
   width: 218px;
   height: 285px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  font-family: ${({ theme }) => theme.fonts.mont};
+  box-shadow: 0px 2px 8px 0px #00000022;
+
   span {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: ${({ theme }) => theme.fonts.mont};
   }
   span:last-child {
-    padding: 0.25rem 0.5rem;
-    background-color: #373737;
-    color: white;
+    font-size: 15px;
     font-weight: 700;
-    border-radius: 5px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: #373737;
+    padding: 8px;
+    border-radius: 8px;
+    color: ${({ theme }) => theme.textColors.primary};
+    font-family: ${({ theme }) => theme.fonts.mont};
   }
   img {
     object-fit: contain;
   }
 
   p {
-    margin-top: 0.5rem;
     font-size: 10px;
     font-weight: 300;
     line-height: 12px;
+    letter-spacing: 0px;
+    text-align: left;
     color: #2c2c2c;
+    margin-top: 5px;
+    font-family: ${({ theme }) => theme.fonts.mont};
   }
 `;
 
@@ -52,7 +66,7 @@ export const CardButton = styled.button`
   justify-content: center;
 
   font-size: 14px;
-  width: 100%;
+  width: 218px;
   border: none;
   outline: none;
   background: ${({ theme }) => theme.backgroundColors.primary};
