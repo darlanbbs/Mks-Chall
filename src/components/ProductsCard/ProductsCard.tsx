@@ -34,7 +34,7 @@ const ProductsCard = ({ product }: Products) => {
                 </span>
               </C.CardDesc>
               <p>{product.description}</p>
-              <C.CardButton>
+              <C.CardButton onClick={() => dispatch(addToCart(product))}>
                 <FiShoppingBag />
                 Comprar
               </C.CardButton>
