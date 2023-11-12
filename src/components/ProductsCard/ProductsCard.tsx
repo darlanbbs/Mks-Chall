@@ -1,4 +1,4 @@
-import { Product, Products } from "@/@Types/Types";
+import { Product } from "@/@Types/Types";
 import React, { useEffect, useState } from "react";
 import * as C from "./styles";
 import { FiShoppingBag } from "react-icons/fi";
@@ -6,18 +6,22 @@ import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { addToCart } from "./../../store/reducers/cartReducer";
 import { CardSkeleton } from "../Skeleton/Skelenton";
-const ProductsCard = ({ product }: Products) => {
+
+type Props = {
+  products: Product[];
+};
+const ProductsCard = ({ products }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (product) setIsLoading(false);
-  }, [product]);
+    if (products) setIsLoading(false);
+  }, [products]);
 
   return (
     <C.Container>
-      {product.length > 0
-        ? product.map((product) => (
+      {products.length > 0
+        ? products.map((product) => (
             <C.Card key={product.id}>
               <Image
                 src={product.photo}
