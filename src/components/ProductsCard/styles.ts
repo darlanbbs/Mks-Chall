@@ -37,7 +37,7 @@ export const Card = styled.div`
     background: #373737;
     padding: 8px;
     border-radius: 8px;
-    color: ${({ theme }) => theme.textColors.primary};
+    color: #fff;
   }
   img {
     object-fit: contain;
@@ -73,7 +73,7 @@ export const CardButton = styled.button`
   width: 218px;
   border: none;
   outline: none;
-  background: ${({ theme }) => theme.backgroundColors.primary};
+  background: #0f52ba;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
