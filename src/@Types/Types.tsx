@@ -8,6 +8,9 @@ export type Product = {
   quantity: number;
   total: number;
 };
+export type Products = {
+  product: Product[];
+};
 export type ArrProduct = {
   products: Product[];
   count: number;
